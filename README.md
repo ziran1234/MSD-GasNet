@@ -19,13 +19,4 @@ This repository provides the main code used in the study, including signal prepr
 
 ## Example Outputs
 
-The `examples/` folder contains selected original outputs from the experiments. These files were copied directly from the existing result folders without redrawing or additional post-processing.
-
-The examples include:
-
-- training and testing metric CSV files;
-- loss and accuracy curves;
-- confusion matrices;
-- PCA and t-SNE feature visualizations;
-- traditional machine learning results;
-- representative outputs from Dataset 1 and Dataset 2 experiments.
+The `examples/` folder contains selected representative original experimental outputs from Dataset 1 and Dataset 2.

@@ -1,7 +1,6 @@
 # MSD-GasNet
 
-Official PyTorch implementation of **MSD-GasNet** for GASF-based volatile organic compound (VOC) classification using electronic-nose response signals.
-
+This repository provides the PyTorch implementation of MSD-GasNet for GASF-based volatile organic compound (VOC) classification using electronic-nose response signals.
 This repository provides the main code used in the study, including signal preprocessing, GASF image construction, model implementation, training and evaluation, traditional machine learning baselines, lightweight network comparisons, and result visualization.
 
 ## Main Scripts

@@ -1,9 +1,16 @@
-# GasRecognition
+# MSD-GasNet
 
-GasRecognition is an electronic-nose gas recognition project. It converts gas response CSV signals into image representations such as GASF, RP, MTF, CWT, and STFT, then uses deep learning and traditional machine learning methods for gas classification, concentration regression, and visualization.
+Official PyTorch implementation of **MSD-GasNet** for GASF-based VOC classification using electronic-nose response signals.
 
-`model.py` contains the main custom CNN models, including multi-scale, attention, residual, ablation, plain CNN, and AlexNet-style variants. `model2.py` provides compact VGG19-style models for classification and regression. `model3.py` wraps lightweight `timm` backbones, including GhostNetV3, StarNet-S2, and FastViT-T8.
+This repository includes code for signal preprocessing, GASF image construction, model training and evaluation, traditional machine learning baselines, lightweight network comparisons, and result visualization.
 
-The main experiment scripts are `graph_conversion.py` for signal-to-image conversion, `model_train_test.py` for deep learning experiments, and `traditional_ml_baselines.py` for machine learning baseline comparisons.
+The main scripts are:
 
-Experiment outputs, including metric CSV files, loss and accuracy curves, confusion matrices, and clustering visualizations, are saved in folders such as `train_test_results/`, `confusion_matrix/`, `cluster/`, and `traditional_ml_results/`.
+- `graph_conversion.py`: time-series-to-image conversion;
+- `model.py`: MSD-GasNet and related CNN models;
+- `model2.py`: VGG-style models;
+- `model3.py`: GhostNetV3, StarNet-S2, and FastViT-T8;
+- `model_train_test.py`: deep learning experiments;
+- `traditional_ml_baselines.py`: LR, RF, QDA, and KNN comparisons.
+
+The raw datasets are available from the corresponding original publications and are not redistributed here.
